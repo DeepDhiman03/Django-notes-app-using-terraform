@@ -1,18 +1,3 @@
-resource "aws_instance" "jenkins_instance" {
-  ami           = var.Jenkins_ami_id 
-  instance_type = var.instance_type
-  subnet_id     = aws_subnet.public_subnet_1.id
-
-  vpc_security_group_ids = [aws_security_group.jenkins_sg.id]
-
-
-  tags = {
-    Name = "Jenkins-Server"
-  }
-
- 
-}
-
 resource "aws_launch_template" "django_launch_template" {
   name_prefix   = "django-app-launch-template"
   image_id      = var.application_ami_id 
