@@ -20,3 +20,20 @@ Run the following command to set up your AWS credentials:
 
 ```bash
 aws configure
+```
+### Step 2: Initialize Terraform
+
+```bash
+terraform init
+```
+
+### Step 3: Validate Configuration
+
+```bash
+terraform validate
+```
+### Step 4: Apply the Configuration
+
+```bash
+terraform apply
+```
