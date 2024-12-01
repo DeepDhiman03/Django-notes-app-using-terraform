@@ -1,8 +1,3 @@
-variable "Jenkins_ami_id" {
-  description = "The AMI ID for the jenkins server "
-  type =string
-
-}
 variable "application_ami_id" {
   description = "django-application servers ami id"
   type = string
